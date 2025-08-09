@@ -1,0 +1,55 @@
+{
+  "name": "event-ticketing-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --exec tsx src/server.ts",
+    "start:build": "tsc",
+    "clean": "rimraf node_modules package-lock.json dist",
+    "reinstall": "npm run clean && npm install",
+    "lint": "npx eslint src --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulAkarsanaDevara/event-ticketing-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PaulAkarsanaDevara/event-ticketing-api/issues"
+  },
+  "homepage": "https://github.com/PaulAkarsanaDevara/event-ticketing-api#readme",
+  "dependencies": {
+    "awilix": "^12.0.5",
+    "bull": "^4.16.5",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "midtrans-client": "^1.4.3",
+    "mongoose": "^8.17.1",
+    "morgan": "^1.10.1",
+    "nodemailer": "^7.0.5",
+    "qrcode": "^1.5.4",
+    "redis": "^5.8.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.2.1",
+    "@types/qrcode": "^1.5.5",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.0"
+  }
+}
