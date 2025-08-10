@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 import authRoutes from './routes/auth.route';
+import eventRoutes from "./routes/event.route";
 
 dotenv.config();
 
@@ -15,5 +16,6 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/auth', authRoutes);
+app.use('/api/events', eventRoutes);
 
 export default app;
