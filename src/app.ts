@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import authRoutes from './routes/auth.route';
 import eventRoutes from "./routes/event.route";
+import bookingRoutes from './routes/booking.routes';
 
 dotenv.config();
 
@@ -17,5 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/events', eventRoutes);
+app.use('/api/bookings', bookingRoutes);
 
 export default app;
